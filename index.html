@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro de Competidores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Cronometro de Competidores</h1>
+            <p>Registro de tiempos y calculo de diferencias con el primer lugar</p>
+        </header>
+
+        <section class="card">
+            <h2>Registro de competidores</h2>
+            <div class="fila">
+                <input type="text" id="nombreCompetidor" placeholder="Ingrese el nombre del competidor">
+                <button id="btnAgregar">Agregar</button>
+            </div>
+            <p id="mensaje" class="mensaje"></p>
+        </section>
+
+        <section class="card">
+            <h2>Lista de competidores</h2>
+            <ul id="listaCompetidores" class="lista-competidores"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Cronometro</h2>
+            <div class="cronometro" id="pantallaCronometro">00:00:00.000</div>
+
+            <div class="fila">
+                <label for="selectCompetidor">Seleccionar competidor:</label>
+                <select id="selectCompetidor">
+                    <option value="">-- Seleccione --</option>
+                </select>
+            </div>
+
+            <div class="botones">
+                <button id="btnIniciar">Iniciar</button>
+                <button id="btnDetener">Detener</button>
+                <button id="btnRegistrar">Registrar tiempo</button>
+                <button id="btnReiniciar">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Resultados</h2>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Competidor</th>
+                            <th>Tiempo</th>
+                            <th>Diferencia con el primero</th>
+                            <th>Posicion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResultados">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

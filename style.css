@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    padding: 20px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #1d3557;
+}
+
+header p {
+    color: #555;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #1d3557;
+}
+
+.fila {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+input, select {
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+button {
+    border: none;
+    background: #457b9d;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #1d3557;
+}
+
+.mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #d62828;
+}
+
+.lista-competidores {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-competidores li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cronometro {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #1d3557;
+    background: #eef4fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #1d3557;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.primer-lugar {
+    background: #d8f3dc !important;
+    font-weight: bold;
+}
