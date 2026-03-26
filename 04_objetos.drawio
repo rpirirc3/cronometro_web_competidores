@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram id="objetos" name="Page-1">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="o1" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" value="&lt;u&gt;competidor1 : Competidor&lt;/u&gt;&lt;br&gt;id = 1&lt;br&gt;nombre = Rene&lt;br&gt;tiempo = 25:00:00&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;diferencia = 0&lt;br&gt;posicion = 1" vertex="1">
+          <mxGeometry height="150" width="220" x="60" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="o2" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" value="&lt;u&gt;competidor2 : Competidor&lt;/u&gt;&lt;br&gt;id = 2&lt;br&gt;nombre = Ana&lt;br&gt;tiempo = 31:00:00&lt;br&gt;diferencia = 06:00:00&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;br&gt;posicion = 2" vertex="1">
+          <mxGeometry height="150" width="220" x="330" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="o3" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" value="&lt;u&gt;competidor3 : Competidor&lt;/u&gt;&lt;br&gt;id = 3&lt;br&gt;nombre = Pedro&lt;br&gt;tiempo = 42:00:00&lt;br&gt;diferencia = 17:00:00&lt;br&gt;posicion = 3" vertex="1">
+          <mxGeometry height="150" width="220" x="600" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="o4" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" value="&lt;u&gt;cronometro1 : Cronometro&lt;/u&gt;&lt;br/&gt;tiempoInicio = 0&lt;br/&gt;tiempoTranscurrido = 0&lt;br/&gt;estado = false" vertex="1">
+          <mxGeometry height="120" width="240" x="220" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="o5" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" value="&lt;u&gt;sistema1 : SistemaCronometro&lt;/u&gt;&lt;br/&gt;mejorTiempo = 2500" vertex="1">
+          <mxGeometry height="90" width="250" x="560" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="oe0" edge="1" parent="1" source="o5" style="endArrow=none;html=1;" target="o1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oe1" edge="1" parent="1" source="o5" style="endArrow=none;html=1;" target="o2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oe2" edge="1" parent="1" source="o5" style="endArrow=none;html=1;" target="o3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oe3" edge="1" parent="1" source="o5" style="endArrow=none;html=1;" target="o4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

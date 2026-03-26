@@ -1,0 +1,15 @@
+<mxfile host="app.diagrams.net" modified="2026-03-25T00:00:00.000Z" agent="GPT" version="24.7.17">
+  <diagram id="clases" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="c1" value="&lt;b&gt;Competidor&lt;/b&gt;&lt;hr/&gt;id : String&lt;br/&gt;nombre : String&lt;br/&gt;tiempo : Number&lt;br/&gt;diferencia : Number&lt;br/&gt;posicion : int&lt;br/&gt;---&lt;br/&gt;registrarTiempo()&lt;br/&gt;calcularDiferencia()" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="70" y="120" width="250" height="260" as="geometry"/></mxCell>
+        <mxCell id="c2" value="&lt;b&gt;Cronometro&lt;/b&gt;&lt;hr/&gt;tiempoInicio : Number&lt;br/&gt;tiempoTranscurrido : Number&lt;br/&gt;estado : Boolean&lt;br/&gt;---&lt;br/&gt;iniciar()&lt;br/&gt;detener()&lt;br/&gt;reiniciar()&lt;br/&gt;actualizarPantalla()&lt;br/&gt;formatearTiempo()" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="390" y="110" width="260" height="280" as="geometry"/></mxCell>
+        <mxCell id="c3" value="&lt;b&gt;SistemaCronometro&lt;/b&gt;&lt;hr/&gt;competidores : Array&lt;br/&gt;mejorTiempo : Number&lt;br/&gt;---&lt;br/&gt;agregarCompetidor()&lt;br/&gt;renderCompetidores()&lt;br/&gt;calcularResultados()&lt;br/&gt;mostrarMensaje()" style="shape=rectangle;whiteSpace=wrap;html=1;align=left;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="730" y="120" width="280" height="250" as="geometry"/></mxCell>
+        <mxCell id="rel1" value="1..*" style="endArrow=none;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="c3" target="c1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rel2" value="usa" style="endArrow=none;dashed=1;html=1;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="c3" target="c2"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

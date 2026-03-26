@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.6">
+  <diagram id="secuencia" name="Page-1">
+    <mxGraphModel dx="1042" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;" value="Usuario" vertex="1">
+          <mxGeometry height="520" width="120" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;" value="Interfaz Web" vertex="1">
+          <mxGeometry height="520" width="120" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;" value="SistemaCronometro" vertex="1">
+          <mxGeometry height="520" width="120" x="430" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;" value="Cronometro" vertex="1">
+          <mxGeometry height="520" width="120" x="660" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;" value="Competidor" vertex="1">
+          <mxGeometry height="520" width="120" x="870" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" source="p1" style="endArrow=block;html=1;" target="p2" value="Seleccionar competidor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="100" as="sourcePoint" />
+            <mxPoint x="300" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" source="p1" style="endArrow=block;html=1;" target="p2" value="Iniciar cronómetro">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="140" as="sourcePoint" />
+            <mxPoint x="300" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" source="p2" style="endArrow=block;html=1;" target="p4" value="iniciar()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="180" as="sourcePoint" />
+            <mxPoint x="720" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" source="p1" style="endArrow=block;html=1;" target="p2" value="Detener cronómetro">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="220" as="sourcePoint" />
+            <mxPoint x="300" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" source="p2" style="endArrow=block;html=1;" target="p4" value="detener()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="260" as="sourcePoint" />
+            <mxPoint x="720" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" source="p4" style="endArrow=block;html=1;" target="p2" value="devolver tiempo">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="720" y="300" as="sourcePoint" />
+            <mxPoint x="300" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" source="p1" style="endArrow=block;html=1;" target="p2" value="Registrar tiempo">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="340" as="sourcePoint" />
+            <mxPoint x="300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" source="p2" style="endArrow=block;html=1;" target="p3" value="asignar tiempo">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="380" as="sourcePoint" />
+            <mxPoint x="490" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" source="p3" style="endArrow=block;html=1;" target="p5" value="actualizar Competidor">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="420" as="sourcePoint" />
+            <mxPoint x="930" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" target="p3" value="calcular resultados">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="590" y="460" />
+              <mxPoint x="590" y="500" />
+            </Array>
+            <mxPoint x="540" y="460" as="sourcePoint" />
+            <mxPoint x="590" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" source="p3" style="endArrow=block;html=1;" target="p2" value="mostrar resultados">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="500" as="sourcePoint" />
+            <mxPoint x="300" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
